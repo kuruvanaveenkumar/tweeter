@@ -1,0 +1,64 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+    "username": "adam_richard",
+    "password": "richard_567",
+    "name": "Adam richard",
+    "gender": "male"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username":"JoeBiden",
+    "password":"biden@123"
+}
+###
+
+GET http://localhost:3000/user/tweets/feed/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAzNTY1MjU4fQ.tkwDjleAMEPYg3-Xizy-RlacLgo0b5vUCoiOehIJgjU
+###
+
+GET http://localhost:3000/user/following/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAzNTY1NzMyfQ.RKyhude9WCT6h9TKN_q6OMcPEB-K1edMmQhzU-eKMBg
+###
+
+GET http://localhost:3000/user/followers/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAzNTY1OTkyfQ.6wk5dBfOdzQWC6qlmYaTjNPwyM1IW-Wgs_Bvh3kAS8o
+###
+
+GET http://localhost:3000/tweets/2/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAzNTY4MTE0fQ.ROTj-S_cIUwgP1msFv4oV0yf9hsYN24cblTFbnf3Oyg
+###
+
+GET http://localhost:3000/tweets/2/likes/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAzNTcwMDkxfQ.MaxnG-1ySG54u9dnYR06NtDgtDBE_8RL_hnMVDIcsOU
+###
+
+GET http://localhost:3000/tweets/1/replies/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAzNTcxNzIxfQ.ba8ENNPsQjDwlaVAQunTFewh0CPstcmNYJv5JU-KDU4
+###
+
+GET http://localhost:3000/user/tweets/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAzNTcyNDM3fQ.WSjBTjQFPEF5uHAaQotpX6OKgkzF9tJ-GTHuYlTFtgk
+###
+
+POST http://localhost:3000/user/tweets/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAzNTcyNDM3fQ.WSjBTjQFPEF5uHAaQotpX6OKgkzF9tJ-GTHuYlTFtgk
+Content-Type: application/json
+
+{
+    "tweet": "The Mornings very beautifuly weather....."
+
+}
+
+###
+
+DELETE http://localhost:3000/tweets/10/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzAzNTcyNDM3fQ.WSjBTjQFPEF5uHAaQotpX6OKgkzF9tJ-GTHuYlTFtgk
+
+
